@@ -16,7 +16,13 @@ export class ChildComponent implements OnChanges {
   constructor() { }
 
   ngOnChanges(changes: SimpleChanges){
-    console.log(changes);
+    
+    const loggedInValue = changes['loggedIn'];
+    if(loggedInValue.currentValue===true){
+      this.message='welcome back gokul';
+    }else {
+      this.message='please login';
+    }
       
   }
 
