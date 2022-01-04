@@ -11,6 +11,7 @@ export class ChildComponent implements OnChanges {
   @Input()
   loggedIn!: boolean;
   message!: string;
+  name='gokul';
 
 
   constructor() { }
@@ -24,6 +25,10 @@ export class ChildComponent implements OnChanges {
       this.message='please login';
     }
       
+  }
+
+  greetgokul(){
+    alert('hey gokul');
   }
 
 }
