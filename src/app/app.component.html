@@ -6,4 +6,7 @@
 </div>
 
 
-<app-child [loggedIn]="userLoggedIn"></app-child>
+<app-child #child [loggedIn]="userLoggedIn"></app-child>
+
+{{child.name}}
+<button (click)="child.greetgokul()">Greet</button>
